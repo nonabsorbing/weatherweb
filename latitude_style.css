@@ -1,37 +1,48 @@
 
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-    background: #f1f1f1;
+    background: #ffffff;
+    padding: 10px;
+
   }
   
   h1 {
-    font-size: 80px;
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 42px;
   }
   
   h3 {
-    font-size: 30px;
+    font-size: 26px;
   }
   
+p {
+  width: 50%;
+
+}
+
   /* Giving our navbar some padding and a background color */
   .navbar {
     padding: 5px;
-    /* background: #5191fd; */
+    background: #807b7b;
   }
   
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
   .navbar li {
     display: inline-block;
-    padding: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     cursor: pointer;
     background: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
   }
   
   /* Getting rid of the default link styles here */
   .navbar li a {
-    color: #000;
+    color: rgba(0, 0, 0, 0.822);
     text-decoration: none;
   }
   
@@ -60,7 +71,7 @@ body {
   #nav-select {
     visibility: hidden;
   }
-  
+  /* dasfffffffffffffffffffffffssssssssssss */
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
   @media (max-width: 480px) {
     .navbar li {
