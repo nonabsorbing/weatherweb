@@ -4,32 +4,42 @@
 		<meta charset='UTF-8'>
 			<title>City Data</title>
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+			<link rel="stylesheet" href="reset.css">
+			<link rel="stylesheet" href="latitude_style.css">
 		</head>
 <body>
-		<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					 <div class="navbar-header">
-					   <a class="navbar-brand" href="file:///C:/Users/Tom/Desktop/weatherweb/landing_page.html#"><b>Latitude</b></a>
-					 </div>
-					 <ul class="nav navbar-nav">
-					   <li class="dropdown">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+				 <div class="navbar-header">
+					 <a class="navbar-brand" href="file:///C:/Users/Tom/Desktop/weatherweb/landing_page.html#"><b>Latitude</b></a>
+				 </div>
+				 <ul class="nav navbar-nav">
+					 <li class="dropdown">
 						 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visualizations
 						 <span class="caret"></span></a>
 						 <ul class="dropdown-menu">
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lattemp.html">Latitude vs. Temperature</a></li>
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcloud.html">Latitude vs. Cloudiness</a></li>
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lathum.html">Latitude vs. Humidity</a></li>                    
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latwin.html">Latitude vs. Wind S</a></li>
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lattemp.html">Latitude vs. Temperature</a></li>
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcloud.html">Latitude vs. Cloudiness</a></li>
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lathum.html">Latitude vs. Humidity</a></li>                    
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latwind.html">Latitude vs. Wind Speed</a></li>
 						 </ul>
-					   </li>
-					   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcompare.html">Comparison</a></li>
-					   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/citydata.html">Data</a></li>
-					 </ul>
-				   </div>
-				 </nav> 
+					 </li>
+					 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcompare.html">Comparison</a></li>
+					 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/citydata.html">Data</a></li>
+				 </ul>
+			 </div>
+ </nav> 
 		<div class="table-responsive">	
 			<br> <br>
+
+		<h2>Data/Methods</h2>
+		<br>
+		<p># The following dataset was created through a python numpy randomizer that produced sets of longitude and latitude, which were then run through citypy, which found the closest city to the randomized pair. <br><br>
+			
+			The randomizer was adjusted to reduce the number of coordinate pairs located near the North and South Poles (by lowering the spectrum of very high and low latitudes), to reduce overrepresentation of cities located in very far North/South latitudes. Also, longitudes were adjusted to reduce the number of randomized pairs located in the Pacific Ocean, avoiding overrepresentation of Pacific coastal cities in the dataset. 
+			
+			
+		</p>
 
 			<table border=1>
 				<thead>

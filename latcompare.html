@@ -5,30 +5,31 @@
     <title>Weather Visualizations - Compare</title>
     <!-- adding bootstrap to page -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="latitude_style.css">
 	</head>
 <body>
-		<nav class="navbar navbar-default">
-				<div class="container-fluid">
-					 <div class="navbar-header">
-					   <a class="navbar-brand" href="file:///C:/Users/Tom/Desktop/weatherweb/landing_page.html#"><b>Latitude</b></a>
-					 </div>
-					 <ul class="nav navbar-nav">
-					   <li class="dropdown">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+				 <div class="navbar-header">
+					 <a class="navbar-brand" href="file:///C:/Users/Tom/Desktop/weatherweb/landing_page.html#"><b>Latitude</b></a>
+				 </div>
+				 <ul class="nav navbar-nav">
+					 <li class="dropdown">
 						 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visualizations
 						 <span class="caret"></span></a>
 						 <ul class="dropdown-menu">
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lattemp.html">Latitude vs. Temperature</a></li>
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcloud.html">Latitude vs. Cloudiness</a></li>
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lathum.html">Latitude vs. Humidity</a></li>                    
-						   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latwin.html">Latitude vs. Wind S</a></li>
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lattemp.html">Latitude vs. Temperature</a></li>
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcloud.html">Latitude vs. Cloudiness</a></li>
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/lathum.html">Latitude vs. Humidity</a></li>                    
+							 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latwind.html">Latitude vs. Wind Speed</a></li>
 						 </ul>
-					   </li>
-					   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcompare.html">Comparison</a></li>
-					   <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/citydata.html">Data</a></li>
-					 </ul>
-				   </div>
-				 </nav> 
+					 </li>
+					 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/latcompare.html">Comparison</a></li>
+					 <li><a href="file:///C:/Users/Tom/Desktop/weatherweb/citydata.html">Data</a></li>
+				 </ul>
+			 </div>
+ </nav> 
 
 
 <h1>Comparison</h1>
@@ -36,16 +37,20 @@
 <br><br>
 <div class="container">
   <div class="row">
-   		<div class="col"><img src = "Images/temperature_vs_latitude.png" alt="temperature_vs_latitude"></a> 
-					<br>Latitude vs. Temperature</div>
-			<div class="col"><img src = "Images/latitude_vs_cloudiness.png" alt="latitude_vs_cloudiness"></a> 
-					<br>Latitude vs. Cloudiness</div>
+			<div class="col-md-6"><br><strong>Latitude vs. Temperature</strong>
+					<img src = "Images/temperature_vs_latitude.png" alt="temperature_vs_latitude"></a> 
+					<br></div>
+				<div class="col-md-6"><br><strong>Latitude vs. Cloudiness</strong>
+					<img src = "Images/latitude_vs_cloudiness.png" alt="latitude_vs_cloudiness"></a> 
+					<br></div>
   	</div>
 		<div class="row">
-				<div class="col"><img src = "Images/latitude_vs_humidity.png" alt="latitude_vs_humidity.png"></a> 
-					<br>Latitude vs. Humidity</div>
-			<div class="col"><img src = "Images/latitude_vs_windspeed.png" alt="latitude_vs_windspeed.png"></a> 
-				<br>Latitude vs. Wind Speed</div>
+			<div class="col-md-6"><br><strong>Latitude vs. Humidity</strong>
+				<img src = "Images/latitude_vs_humidity.png" alt="latitude_vs_humidity.png"></a> 
+					<br></div>
+			<div class="col-md-6"><br><strong>Latitude vs. Wind Speed</strong>
+								<img src = "Images/latitude_vs_windspeed.png" alt="latitude_vs_windspeed.png"></a> 
+				<br></div>
   	</div>
 </div>
 <!-- PUT IN BOOTSTRAP GRID  -->
